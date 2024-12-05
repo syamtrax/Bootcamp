@@ -1,0 +1,61 @@
+.input {
+  margin-bottom: 1em;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.comment {
+  margin-bottom: 1em;
+  border-radius: 5px;
+  height: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.artikel {
+  background-color: rgb(131, 131, 175);
+  width: 50%;
+}
+.cardParent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+.cardChild {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  margin: 10px;
+  height: auto;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardTitle {
+}
+.cardDesc {
+  padding: 0px 10px 0px;
+}
+
+.cardImage {
+  height: 30%;
+  margin-top: 40px;
+}
+.cardContainer {
+  width: 90%;
+  margin: 20px;
+  box-shadow: 20px;
+}
+
+/* Zoom effect on hover */
+.cardChild:hover {
+  transform: scale(1.1); /* Increases size by 20% */
+}
