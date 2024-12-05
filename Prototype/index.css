@@ -1,0 +1,10 @@
+body {
+  align-self: center;
+}
+.container {
+  width: 80%;
+  background-color: antiquewhite;
+}
+ul {
+  list-style: none;
+}

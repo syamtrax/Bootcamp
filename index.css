@@ -1,24 +1,7 @@
-.input {
-  margin-bottom: 1em;
-  border-radius: 5px;
-  padding: 1em;
-}
-
-.comment {
-  margin-bottom: 1em;
-  border-radius: 5px;
-  height: 100px;
-}
-
 .container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-.artikel {
-  background-color: rgb(131, 131, 175);
-  width: 50%;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
 }
 .cardParent {
   display: flex;
@@ -39,8 +22,77 @@
   transition: transform 0.3s ease;
 }
 
-.cardTitle {
+.navbar {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  align-items: end;
+  justify-content: flex-end;
 }
+
+.profile {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.p_img {
+  height: 100px;
+}
+.navbar_options {
+  display: flex;
+  list-style: none;
+  align-items: end;
+  margin-right: 50px;
+  font-size: larger;
+}
+
+.navbar_options li {
+  margin: 10px;
+  font-weight: 200;
+}
+
+.profile_desc {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile_desc h1 {
+  font-size: 70px;
+}
+
+.profile_desc button {
+  background-color: #ff6464;
+  border: none;
+  padding: 10px;
+  color: white;
+  width: 30%;
+}
+
+.recent_post {
+  width: 100%;
+  background-color: #edf7fa;
+}
+
+.profile_img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p_img {
+  width: 50%;
+  height: auto;
+  border-radius: 100%;
+  box-shadow: -5px 10px #edf7fa;
+}
+
 .cardDesc {
   padding: 0px 10px 0px;
 }
@@ -50,11 +102,72 @@
   margin-top: 40px;
 }
 .cardContainer {
-  width: 90%;
-  margin: 20px;
+  width: 100%;
   box-shadow: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cardChild:hover {
   transform: scale(1.1);
+}
+
+.resume_button:hover {
+  cursor: pointer;
+}
+
+.recentParent {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.recent_nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.recentChild {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardDesc {
+  width: 100%;
+  display: flex;
+}
+
+.cardDate {
+  margin-right: 10px;
+}
+.cardKey {
+  margin-left: 10px;
+}
+.recentChild h3 {
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 26px;
+  color: #21243d;
+}
+.recentChild p {
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 16px;
+  color: #21243d;
+}
+
+.recentView {
+  color: #00a8cc;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.recentTitle {
+  color: #21243d;
+  font-size: 22px;
 }
