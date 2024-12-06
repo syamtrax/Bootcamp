@@ -62,7 +62,8 @@
   border: none;
   padding: 10px;
   color: white;
-  width: 30%;
+  width: 35%;
+  font-size: large;
 }
 
 .profile_img {
@@ -185,4 +186,60 @@
 .recentTitle {
   color: #21243d;
   font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: auto;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar {
+    align-items: center;
+    justify-content: center;
+  }
+  .profile_img {
+    order: -1;
+  }
+  .profile_desc {
+    text-align: center;
+    align-items: center;
+    width: 80%;
+  }
+  .recentParent {
+    align-items: center;
+    flex-direction: column;
+  }
+  .recentChild {
+    width: 80%;
+  }
+  .profile_desc button {
+    font-size: medium;
+  }
+
+  .cardParent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardDescrip {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .cardChild {
+    width: 90%;
+  }
+
+  .cardImage {
+    height: 20%;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
 }
