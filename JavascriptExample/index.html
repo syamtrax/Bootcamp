@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh DOM</title>
+  </head>
+  <body>
+    <h1 id="judul">Selamat datang!</h1>
+    <script>
+      var judulElemen = document.getElementById("judul");
+
+      const judulTimeout = setTimeout(function () {
+        judulElemen.innerHTML = "Hello, DOM!";
+      }, 2000);
+      judulTimeout;
+    </script>
+  </body>
+</html>
